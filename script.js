@@ -85,7 +85,7 @@ cartCloseBtn.addEventListener('click', () => {
     cartOverlay.style.display = 'none';
 });
 
-// Checkout functionality
+// Checkout functionality_
 checkoutBtn.addEventListener('click', () => {
     if (cart.length > 0) {
         const total = cart.reduce((sum, item) => sum + item.price, 0);
