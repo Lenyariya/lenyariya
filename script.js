@@ -70,7 +70,7 @@ function updateCart() {
     }
 }
 
-// Remove item from cart
+// Remove item from cart_
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCart();
