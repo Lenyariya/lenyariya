@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Spa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Inspiration Spa</div>
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#massage">Massage</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>Your Order</h2>
+                <span class="cart-close">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-summary">
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Massage Services -->
+    <section id="massage" class="massage-services">
+        <div class="massage-grid">
+            <div class="massage-item" data-name="Swedish Massage" data-price="80">
+                <h3>Swedish Massage</h3>
+                <p>Relaxing full-body massage</p>
+                <p class="price">$80</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="massage-item" data-name="Deep Tissue Massage" data-price="100">
+                <h3>Deep Tissue Massage</h3>
+                <p>Intense muscle relief</p>
+                <p class="price">$100</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="massage-item" data-name="Aromatherapy Massage" data-price="90">
+                <h3>Aromatherapy Massage</h3>
+                <p>Healing essential oils</p>
+                <p class="price">$90</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="massage-item" data-name="Hot Stone Massage" data-price="110">
+                <h3>Hot Stone Massage</h3>
+                <p>Heated stone therapy</p>
+                <p class="price">$110</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="massage-item" data-name="Sports Massage" data-price="95">
+                <h3>Sports Massage</h3>
+                <p>Athletic muscle recovery</p>
+                <p class="price">$95</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="massage-item" data-name="Couples Massage" data-price="160">
+                <h3>Couples Massage</h3>
+                <p>Shared relaxation experience</p>
+                <p class="price">$160</p>
+                <button class="order-btn">Order</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
